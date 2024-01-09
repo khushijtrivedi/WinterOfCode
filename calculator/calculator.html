@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>calculator</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./calculator.css">
+    <script src="./calculator.js"></script>
+</head>
+<body>
+    <div class="cal-box">
+        <div class="cal-head">
+            <button id="dark-mode" class="cal-btn key-btn" onclick="toggleDarkMode()">
+               
+            </button>
+            <button id="light-mode" class="instr-btn key-btn" onclick="toggleLightMode()" style="display: none;">
+                
+            </button>
+        </div>
+        <div class="cal-display">
+
+        </div>
+        <div class="cal-keys">
+            <div>
+                <button id="ac-btn" class="instr-btn key-btn">AC</button>
+                <button id="c-btn" class="instr-btn key-btn">C</button>
+                <button id="per-btn" class="instr-btn key-btn">%</button>
+                <button id="div-btn" class="op-btn key-btn">/</button>
+            </div>
+            <div>
+                <button id="sev-btn" class="cal-btn key-btn">7</button>
+                <button id="eigth-btn" class="cal-btn key-btn">8</button>
+                <button id="nine-btn" class="cal-btn key-btn">9</button>
+                <button id="mul-btn" class="op-btn key-btn">X</button>
+            </div>
+            <div>
+                <button id="four-btn" class="cal-btn key-btn">4</button>
+                <button id="five-btn" class="cal-btn key-btn">5</button>
+                <button id="six-btn" class="cal-btn key-btn">6</button>
+                <button id="minus-btn" class="op-btn key-btn">-</button>
+            </div>
+            <div>
+                <button id="one-btn" class="cal-btn key-btn">1</button>
+                <button id="two-btn" class="cal-btn key-btn">2</button>
+                <button id="three-btn" class="cal-btn key-btn">3</button>
+                <button id="plus-btn" class="op-btn key-btn">+</button>
+            </div>
+            <div>
+                <button id="zero-btn" class="zero-btn key-btn">0</button>
+                <button id="point-btn" class="cal-btn key-btn">.</button>
+                <button id="equal-btn" class="equal-btn key-btn">=</button>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

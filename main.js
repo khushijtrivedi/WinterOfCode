@@ -32,8 +32,6 @@ function addTodo(){
     });
 
     document.getElementById("todoList").appendChild(listItem);
-    // var horizontalLine = document.createElement("hr");
-    // document.getElementById("todoList").appendChild(horizontalLine);
 
     document.getElementById("input-text").value = "";
 }
