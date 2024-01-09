@@ -46,3 +46,46 @@ var uncheckedItems = totalItems - checkedItems;
 document.getElementById("totalItems").innerText = uncheckedItems;
 
 }
+
+function filterAll(){
+    var items = document.getElementById("todoList").getElementsByTagName("li");
+    for (var i = 0; i < items.length; i++) {
+        items[i].style.display = "flex";
+    }
+}
+
+
+document.addEventListener("DOMContentLoaded", function() {
+   
+    document.getElementById("input-text").addEventListener("keyup", function(event) {
+        if (event.key === "Escape") {
+            
+            document.getElementById("input-text").value = "";
+        }
+    });
+});
+
+
+function filterChecked(){
+    var items = document.getElementById("todoList").getElementsByTagName("li");
+    for (var i = 0; i < items.length; i++) {
+        var checkbox = items[i].getElementsByClassName("checkbox")[0];
+        if (checkbox.checked) {
+            items[i].style.display = "flex";
+        } else {
+            items[i].style.display = "none";
+        }
+    }
+}
+
+function filterUnchecked(){
+    var items = document.getElementById("todoList").getElementsByTagName("li");
+    for (var i = 0; i < items.length; i++) {
+        var checkbox = items[i].getElementsByClassName("checkbox")[0];
+        if (checkbox.checked) {
+            items[i].style.display = "none";
+        } else {
+            items[i].style.display = "flex";
+        }
+    }
+}
