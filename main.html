@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To Do List</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./main.css">
+    <script src="./main.js"></script>
+</head>
+<body>
+    
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-12 text-center">
+                <div class="box">
+                    <div>
+                        <h1 class="box-heading"><b>THINGS TO DO</b></h1>
+                        <div class="box-input">
+                            <input type="text" class="form-control" id="input-text" placeholder="Add New">
+                        </div>
+                    </div>
+                    <div class="content">
+                        <ul class="scroll" id="todoList">
+                        </ul>
+                    </div>
+                    
+                    <div class="box-footer">
+                        <button class="btn btn-primary custom-button plus-btn" onclick="addTodo()">+</button>
+                        <button type="button" class="btn btn-default custom-button">
+                            <span class="glyphicon glyphicon-search"></span>
+                        </button>
+                        <div class="footer-container">
+                            <p>
+                                <span id="totalItems">0</span> items total
+                            </p>
+                        </div>
+                        <div class="filter-right">
+                            <button type="button" class="btn btn-default custom-button" onclick="filterAll()">All</button>
+                            <button type="button" class="btn btn-default custom-button" onclick="filterChecked()">Checked</button>
+                            <button type="button" class="btn btn-default custom-button" onclick="filterUnchecked()">Unchecked</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="cancel-instr">
+                    <p>Press `ESC` to cancel.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
